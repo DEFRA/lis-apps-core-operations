@@ -26,7 +26,7 @@ describe('#buildRedisClient', () => {
         db: 0,
         enableReadyCheck: false,
         host: '127.0.0.1',
-        keyPrefix: 'cdp-node-frontend-template:',
+        keyPrefix: 'lis-apps-core-operations:',
         port: 6379
       })
     })
@@ -48,7 +48,7 @@ describe('#buildRedisClient', () => {
         [{ host: '127.0.0.1', port: 6379 }],
         {
           dnsLookup: expect.any(Function),
-          keyPrefix: 'cdp-node-frontend-template:',
+          keyPrefix: 'lis-apps-core-operations:',
           redisOptions: {
             db: 0,
             enableReadyCheck: false,
