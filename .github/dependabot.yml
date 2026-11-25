@@ -25,6 +25,13 @@ updates:
       lis:
         patterns:
           - '@defra/lis-*'
+      # stylelint and its configs pin each other through peer ranges, so every
+      # bump of the family arrives together. Listed before `dependencies`
+      # because a package joins the first group it matches.
+      stylelint:
+        patterns:
+          - stylelint
+          - stylelint-*
       # One pull request for every other patch and minor bump.
       dependencies:
         exclude-patterns:
